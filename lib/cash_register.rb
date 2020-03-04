@@ -3,6 +3,7 @@ class Cash_Register
   def initialize
     @total = 0
     @discount = 0 
+    @item = []
   end
   
   def total
@@ -10,6 +11,8 @@ class Cash_Register
   end
   
   def add_item(name, price, quantity)
+    @price = price
+    @total += price * quantity
     
     
   end 
