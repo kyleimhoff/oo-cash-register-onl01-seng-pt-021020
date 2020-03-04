@@ -1,6 +1,6 @@
 class CashRegister 
   attr_accessor :item, :price, :total, :discount
-  def initialize
+  def initialize(discount)
     @total = 0
     @discount = discount 
     @items = []
@@ -20,7 +20,7 @@ class CashRegister
       counter += 1 
     end
     else
-      @item << name
+      @items << name
     end
   end
     
