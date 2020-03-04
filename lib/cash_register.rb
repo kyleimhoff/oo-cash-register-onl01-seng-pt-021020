@@ -1,4 +1,4 @@
-class Cash_Register 
+class CashRegister 
   attr_accessor :item, :price, :total, :discount
   def initialize
     @total = 0
