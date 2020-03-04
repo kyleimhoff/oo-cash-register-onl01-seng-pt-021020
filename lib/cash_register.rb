@@ -3,4 +3,8 @@ class Cash_Register
   def initialize
     @total = 0
     @discount = 0 
+  end
+  
+  def self.total(item, price)
+    
     
