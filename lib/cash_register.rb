@@ -26,7 +26,7 @@ class CashRegister
     
     def apply_discount
       if @discount > 0 
-        
+        @discount_off = (@price)
   end 
   
     
