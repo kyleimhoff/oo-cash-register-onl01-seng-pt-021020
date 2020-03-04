@@ -2,7 +2,7 @@ class CashRegister
   attr_accessor :item, :price, :total, :discount
   def initialize
     @total = 0
-    @discount = 0 
+    @discount = discount 
     @items = []
   end
   
@@ -16,11 +16,11 @@ class CashRegister
     if quantity > 1 
       counter = 0 
       while counter < quantity
-      @items << item
+      @items << name
       counter += 1 
     end
     else
-      @item << item
+      @item << name
     end
   end
     
